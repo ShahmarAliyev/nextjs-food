@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className={styles.container}>
       <div className={styles.item}>
@@ -34,6 +37,24 @@ const Navbar = () => {
           <div className={styles.counter}>2</div>
         </div>
       </div>
+      <div className={styles.hamburger} onClick={() => setOpen(!open)}>
+        <div className={styles.line} />
+        <div className={styles.line} />
+        <div className={styles.line} />
+      </div>
+      <ul
+        onClick={() => {
+          setOpen(false);
+        }}
+        className={styles.menu}
+        style={{ right: open ? "0px" : "-50vw" }}
+      >
+        <li className={styles.menuItem}>Menu</li>
+        <li className={styles.menuItem}>Cart</li>
+        <li className={styles.menuItem}>Location</li>
+        <li className={styles.menuItem}>About</li>
+        <li className={styles.menuItem}>Contact</li>
+      </ul>
     </div>
   );
 };

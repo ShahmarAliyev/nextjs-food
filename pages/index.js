@@ -1,11 +1,12 @@
 import Head from "next/head";
 import Featured from "../components/Featured";
 import TacoList from "../components/TacoList";
-import styles from "../styles/Home.module.css";
+import Cart from "./cart";
+import Product from "./product/[id]";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Sergios Tacos</title>
         <meta
@@ -16,6 +17,8 @@ export default function Home() {
       </Head>
       <Featured />
       <TacoList />
+      <Cart />
+      <Product />
     </div>
   );
 }
