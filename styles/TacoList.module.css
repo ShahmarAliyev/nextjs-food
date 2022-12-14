@@ -1,14 +1,40 @@
 .container {
+  background-color: #351814;
   padding: 20px 10px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #ffaf5a;
 }
 
+.button {
+  font-family: "Fondamento", cursive;
+  font-size: 24px;
+  height: 60px;
+  width: 200px;
+  margin-left: 10px;
+  background-color: #ffaf5a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 2%;
+}
+.button2 {
+  border-radius: 2%;
+
+  font-size: 24px;
+  height: 60px;
+  width: 200px;
+  margin-left: 10px;
+  background-color: #ffffff;
+  color: #ffaf5a;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
 .desc {
-  font-style: 24px;
-  color: #444;
+  font-size: 18px;
+  color: #ffffff;
   width: 70%;
 }
 
@@ -28,5 +54,11 @@
     width: 90%;
     text-align: center;
     font-size: 18px;
+  }
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

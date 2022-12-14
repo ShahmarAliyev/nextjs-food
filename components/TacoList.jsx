@@ -17,9 +17,10 @@ const TacoList = () => {
         <TacoCard />
         <TacoCard />
         <TacoCard />
-        <TacoCard />
-        <TacoCard />
-        <TacoCard />
+      </div>
+      <div className={styles.buttonContainer}>
+        <button className={styles.button2}>Call to Order</button>
+        <button className={styles.button}>See the Menu</button>
       </div>
     </div>
   );

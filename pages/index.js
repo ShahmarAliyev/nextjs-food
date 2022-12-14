@@ -1,8 +1,7 @@
 import Head from "next/head";
-import Featured from "../components/Featured";
 import TacoList from "../components/TacoList";
-import Cart from "./cart";
-import Product from "./product/[id]";
+import Logogreeting from "../components/Logogreeting";
+import Featured from "../components/Featured";
 
 export default function Home() {
   return (
@@ -15,10 +14,11 @@ export default function Home() {
         />
         <link rel="icon" href="/taco.png" />
       </Head>
+      <Logogreeting />
       <Featured />
       <TacoList />
-      <Cart />
-      <Product />
+      {/* <Cart /> */}
+      {/* <Product /> */}
     </div>
   );
 }

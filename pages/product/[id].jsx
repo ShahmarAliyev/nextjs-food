@@ -53,6 +53,8 @@ const Product = () => {
             />
             <label htmlFor="sauce">Double sauce</label>
           </div>
+
+          <input type="text" name="mod" />
         </div>
 
         <div className={styles.add}>

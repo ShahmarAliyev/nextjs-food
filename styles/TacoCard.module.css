@@ -7,12 +7,14 @@
   justify-content: center;
   padding: 20px 40px;
   cursor: pointer;
+  color: #ffaf5a;
 }
 
 .title {
   font-size: 18px;
   font-weight: bold;
-  color: #d1411e;
+  color: #000000;
+  color: #ffaf5a;
 }
 
 .price {
@@ -23,7 +25,26 @@
 
 .desc {
   text-align: center;
-  color: #777;
+  color: rgb(255, 255, 255);
+}
+
+.button {
+  height: 30px;
+  margin-left: 10px;
+  background-color: #d1411e;
+  color: white;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.button2 {
+  height: 30px;
+  margin-left: 10px;
+  background-color: gray;
+  color: #ffffff;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {
@@ -36,5 +57,16 @@
   .price,
   .desc {
     font-size: 20px;
+  }
+
+  .button {
+    height: 50px;
+    width: 80px;
+    margin-left: 20px;
+  }
+  .button2 {
+    height: 50px;
+    width: 80px;
+    margin-left: 20px;
   }
 }

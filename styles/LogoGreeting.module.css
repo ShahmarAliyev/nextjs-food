@@ -1,11 +1,10 @@
 .container {
   height: calc(100vh - 100px);
+  /* background-color: #351814; */
   background-color: #ffffff;
+
   overflow: hidden;
   position: relative;
-  display: flex;
-  align-items: center;
-  margin-top: 50px;
 }
 
 .arrowContainer {
@@ -23,7 +22,6 @@
 }
 
 .wrapper {
-  margin-top: 50px;
   width: 300vw;
   height: 100%;
   display: flex;
@@ -37,10 +35,14 @@
 }
 .featuredImage {
   object-fit: contain;
+  border-color: #351814;
 }
 
 @media screen and (max-width: 480px) {
   .container {
     height: 50vh;
+  }
+  .container {
+    background-color: #ffffff;
   }
 }
