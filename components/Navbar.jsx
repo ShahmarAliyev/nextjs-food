@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 
@@ -8,14 +9,16 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.itemLogo}>
-        <p>Sergio&apos;s Tacos</p>
+        <Link href="/">Sergio&apos;s Tacos</Link>
       </div>
       <div className={styles.item}>
         <ul className={styles.list}>
           <li className={styles.listItem}>Order Online</li>
           <li className={styles.listItem}>Menu</li>
 
-          <li className={styles.listItem}>Contact</li>
+          <li className={styles.listItem}>
+            <Link href="/contact"> Contact</Link>
+          </li>
           <li className={styles.listItem}>About</li>
         </ul>
       </div>
@@ -34,7 +37,11 @@ const Navbar = () => {
       >
         <li className={styles.menuItem}>Menu</li>
         <li className={styles.menuItem}>Cart</li>
-        <li className={styles.menuItem}>Location</li>
+        <li className={styles.menuItem}>
+          <Link href="#footer" scroll={true}>
+            Location
+          </Link>
+        </li>
         <li className={styles.menuItem}>About</li>
         <li className={styles.menuItem}>Contact</li>
       </ul>

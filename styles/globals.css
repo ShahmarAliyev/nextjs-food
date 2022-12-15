@@ -2,7 +2,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Purple Purse", cursive;
+  font-family: "Purple Purse", cursive !important;
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
 
 a {
