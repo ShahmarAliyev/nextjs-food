@@ -1,5 +1,5 @@
-import styles from "../styles/Logogreeting.module.css";
 import Image from "next/image";
+import styles from "../styles/Logogreeting.module.css";
 
 const Featured = () => {
   return (
