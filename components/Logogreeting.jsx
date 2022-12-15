@@ -19,4 +19,4 @@ const Featured = () => {
   );
 };
 
-export default Featured;
+export default Logogreeting;
