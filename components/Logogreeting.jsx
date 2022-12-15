@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "../styles/Logogreeting.module.css";
 
-const Featured = () => {
+const Logogreeting = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
