@@ -1,22 +1,8 @@
 .container {
   height: calc(100vh - 100px);
-  background-color: #ffffff;
+  background-color: #351814;
   overflow: hidden;
   position: relative;
-}
-
-.arrowContainer {
-  position: absolute;
-  width: 8%;
-  height: 15%;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  cursor: pointer;
-  z-index: 2;
-}
-.arrowImages {
-  object-fit: contain;
 }
 
 .wrapper {
@@ -39,8 +25,5 @@
 @media screen and (max-width: 480px) {
   .container {
     height: 50vh;
-  }
-  .container {
-    background-color: #ffffff;
   }
 }
