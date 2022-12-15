@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import styles from "../styles/Navbar.module.css";
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 

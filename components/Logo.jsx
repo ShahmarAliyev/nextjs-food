@@ -1,7 +1,7 @@
 import Image from "next/image";
-import styles from "../styles/Logogreeting.module.css";
+import styles from "../styles/Logo.module.css";
 
-const Logogreeting = () => {
+const Logo = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -19,4 +19,4 @@ const Logogreeting = () => {
   );
 };
 
-export default Logogreeting;
+export default Logo;
