@@ -13,13 +13,19 @@ const Navbar = () => {
       </div>
       <div className={styles.item}>
         <ul className={styles.list}>
-          <li className={styles.listItem}>Order Online</li>
-          <li className={styles.listItem}>Menu</li>
+          <li className={styles.listItem}>
+            <Link href="/menu"> Menu</Link>
+          </li>
+          <li className={styles.listItem}>
+            <Link href="#footer"> Contact</Link>
+          </li>
 
           <li className={styles.listItem}>
-            <Link href="/contact"> Contact</Link>
+            <Link href="#footer"> Location</Link>
           </li>
-          <li className={styles.listItem}>About</li>
+          <li className={styles.listItem}>
+            <Link href="/about"> About</Link>
+          </li>
         </ul>
       </div>
 
@@ -35,15 +41,22 @@ const Navbar = () => {
         className={styles.menu}
         style={{ right: open ? "0px" : "-50vw" }}
       >
-        <li className={styles.menuItem}>Menu</li>
-        <li className={styles.menuItem}>Cart</li>
+        <li className={styles.menuItem}>
+          <Link href="/menu">Menu</Link>
+        </li>
+        <li className={styles.menuItem}>
+          <Link href="#footer" scroll={true}>
+            Contact
+          </Link>
+        </li>
         <li className={styles.menuItem}>
           <Link href="#footer" scroll={true}>
             Location
           </Link>
         </li>
-        <li className={styles.menuItem}>About</li>
-        <li className={styles.menuItem}>Contact</li>
+        <li className={styles.menuItem}>
+          <Link href="/about">About</Link>
+        </li>
       </ul>
     </div>
   );

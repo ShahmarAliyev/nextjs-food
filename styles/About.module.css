@@ -40,6 +40,28 @@
 }
 
 .hr {
+  margin-bottom: 50px;
+  color: #000;
   height: 2px;
-  color: #351814;
+  width: 100vw;
+}
+
+@media screen and (max-width: 480px) {
+  .preDiv {
+    padding: 0;
+  }
+  .infoDiv {
+    flex-direction: column;
+  }
+  .text {
+    margin: 20px 20px;
+  }
+  .historyTextDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
 }

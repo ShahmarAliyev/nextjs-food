@@ -28,7 +28,7 @@ const Featured = () => {
       >
         <Image
           className={styles.arrowImages}
-          src="/img/arrowl.png"
+          src="/img/arrowleft.png"
           alt=""
           fill
         />
@@ -48,7 +48,7 @@ const Featured = () => {
         style={{ right: 0 }}
         onClick={() => handleArrow("r")}
       >
-        <Image src="/img/arrowr.png" fill alt="" />
+        <Image src="/img/arrowrr.png" fill alt="" />
       </div>
     </div>
   );

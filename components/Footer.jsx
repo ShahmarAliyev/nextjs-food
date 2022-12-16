@@ -9,9 +9,7 @@ const Footer = () => {
       </div>
       <div className={styles.item}>
         <div className={styles.card}>
-          <h2 className={styles.motto}>
-            OH, YES, WE DID. DOOR COUNTYS BEST TACOS. FRESH AND DELICUOS
-          </h2>
+          <h2 className={styles.motto}>Contact Us</h2>
         </div>
         <div className={styles.card}>
           <h1 className={styles.title}> Find Our Location</h1>
@@ -20,9 +18,13 @@ const Footer = () => {
             <br /> Sister Bay, 85033
             <br /> +1 (224) 224-4242
           </p>
-        </div>
-        <div className={styles.card}>
           <h1 className={styles.title}>Working Hours</h1>
+          <p className={styles.text}>
+            Saturday-Sunday
+            <br /> 9am-3pm
+            <br /> 4pm-9pm
+          </p>
+          <h1 className={styles.title}>Social Accounts</h1>
           <p className={styles.text}>
             Saturday-Sunday
             <br /> 9am-3pm

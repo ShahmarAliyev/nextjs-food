@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../styles/TacoList.module.css";
 import TacoCard from "./TacoCard";
 
@@ -19,8 +20,12 @@ const TacoList = () => {
         <TacoCard />
       </div>
       <div className={styles.buttonContainer}>
-        <button className={styles.button2}>Call to Order</button>
-        <button className={styles.button}>See the Menu</button>
+        <button className={styles.button2}>
+          <Link href="#footer">Call to Order </Link>
+        </button>
+        <button className={styles.button}>
+          <Link href="/menu">See the Menu </Link>
+        </button>
       </div>
     </div>
   );

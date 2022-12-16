@@ -43,4 +43,12 @@
   .container {
     height: 50vh;
   }
+  .imgContainer {
+    width: 100vw;
+    height: 80%;
+    position: relative;
+  }
+  .featuredImage {
+    object-fit: cover;
+  }
 }
